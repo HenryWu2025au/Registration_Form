@@ -18,10 +18,10 @@
             <input type="text" id="lastName" name="lastName" placeholder="LastName" autocomplete="0"  required>
 
             <label for="emailAddress">Email Address</label>
-            <input type="email" id="emailAddress" name="emailAddress" placeholder="EmailAddress" autocomplete="0"  required>
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="EmailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="0"  required>
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" minlength="8" placeholder="Password" autocomplete="0"  required>
+            <input type="password" id="password" name="password" minlength="8" placeholder="Password" autocomplete="0" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="ConfirmPassword" autocomplete="0"  required>
